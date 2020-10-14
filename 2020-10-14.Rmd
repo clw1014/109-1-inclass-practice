@@ -1,0 +1,89 @@
+---
+title: "課堂練習模版"
+author: "莊禮維"
+date: "2020-10-14"
+output: output_format
+params:
+  id: "410872055"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+num <- c(1.5, 2, 3)
+int <- c(1L, 3L, -2L)
+char <- c("1.5","2","3")
+logi <- c(T,T,F)
+
+typeof(num)
+typeof(int)
+typeof(char)
+typeof(logi)
+```
+
+```{r}
+class(num)
+class(int)
+class(char)
+class(logi)
+```
+
+```{r}
+1+1.5
+```
+```{r}
+# 10位學生的主系
+majors10_char <- c('經濟學系','社會學系','社會學系','經濟學系','經濟學系','社會學系','經濟學系','經濟學系','經濟學系','社會學系') #定義它
+
+typeof(majors10_char)
+class(majors10_char)
+```
+```{r}
+majors10_factor <- factor(majors10_char)
+```
+
+```{r}
+typeof(majors10_factor) #電腦用2L代表經濟系 1L代表社會系 可以省空間 所以type會是int
+class(majors10_factor)
+```
+
+```{r}
+levels(majors10_factor) #顯示原本的資料名字(mapping table)
+```
+
+```{r}
+class("1")
+class("1.5")
+```
+
+```{r}
+as.numeric("1")
+as.numeric("1.5") #轉成numeric
+```
+```{r}
+a<-"1"
+as.numeric(a)->a #要記得回存！！！！！！！！！！！！！！！！不然就白轉了
+a+4
+```
+
+```{r}
+majors10_char
+```
+
+```{r}
+majors10_factor
+class(majors10_factor)
+as.integer(majors10_factor)
+levels(majors10_factor)
+```
+
+```{r}
+class(majors10_char)
+class(majors10_factor)
+```
+
+
