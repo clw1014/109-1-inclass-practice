@@ -1,0 +1,50 @@
+---
+title: "課堂練習模版"
+author: "莊禮維"
+date: "2020-12-13"
+output: output_format
+params:
+  id: "410872055"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Your code
+
+```{r}
+library(purrr)
+map(
+  list(2,5,3,7),
+  ~{
+    3^.x
+  }
+)
+map(
+  c(2,5,3,7),
+  ~{
+    3^.x
+  }
+)
+```
+
+```{r}
+map(
+  list(
+    list("Mary", 5),
+    list("John", 10)
+  ),
+  ~{
+    paste0(.x[[1]], " is ",.x[[2]], " years old")
+  }
+)
+
+
+
+
+
+
+
+
+```
